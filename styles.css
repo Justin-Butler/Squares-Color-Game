@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #232323;
+  margin: 0;
+}
+.square {
+  width: 30%;
+  padding-bottom: 30%;
+  background: purple;
+  float: left;
+  margin: 1.66%;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 3px 3px 8px black;
+}
+.square:hover {
+  box-shadow: 3px 5px 8px white;
+}
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+#titleFixed {
+  background-color: #232323;
+}
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
+  width: 50%;
+  margin: 0 auto;
+}
+h2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  width: 50%;
+  margin: 0 auto;
+}
+h3 {
+  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  width: 50%;
+  margin: 0 auto;
+}
+#problem {
+  font-size: 40px;
+}
+/*Score Keeper/Answer Checker Display Config*/
+.info {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  width: 50%;
+  color: #ffffff;
+}
+#scoreDisplay {
+  float: left;
+}
+#ansCheck {
+  float: right;
+}
+/*Nav Bar Config*/
+.gameButtonbar {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4db8ff;
+  width: 50%;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.navleft {
+  float: left;
+}
+.navright {
+  float: right;
+}
+.navleft, .navright {
+  padding: 16px 15px;
+  cursor: pointer;
+}
+.navleft:hover , .navright:hover {
+  background-color: #000000;
+  color: #4db8ff
+}
+/*Instructions*/
+.instruct {
+  display: none;
+  width: 25%;
+  color: #ffffff;
+  float: left;
+  font-family: 'Oswald', sans-serif;
+}
+.instruct h2 {
+  font-size: 30px;
+}
+.instruct li {
+  font-size: 20px;
+}
+@media only screen and (max-width: 1500px) {
+  #titleFixed {
+    position: fixed;
+    width: 100%;
+    background-color: #232323;
+  }
+  .instruct {
+    width: 50%;
+    float: none;
+    margin: 0 auto;
+    padding-top: 375px;
+    padding-bottom: 30px;
+  }
+  #squareContain {
+    padding-top: 325px;
+  }
+  .container {
+    width: 70%;
+  }
+  .gameButtonbar {
+    font-size: 18px;
+    width: 70%;
+  }
+  .info {
+    width: 70%;
+  }
+  .instruct {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #titleFixed {
+    padding-top: 30px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #problem{
+    font-size: 35px;
+  }
+  .container {
+    width: 80%;
+  }
+  .gameButtonbar {
+    width: 80%;
+  }
+  .info {
+    width: 80%;
+  }
+  .instruct {
+    width: 80%;
+    padding-top: 300px;
+  }
+}

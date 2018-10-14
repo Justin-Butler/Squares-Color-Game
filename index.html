@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Great Color Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    
+    <div id="titleFixed">
+      <h1>The Great Color Game</h1>
+      <h2 id="problem">RGB</h2>
+      <h2>Difficulty: <span id="diffDisplay" style="color:#ff3300">Hard</span></h2>
+      <h2>Guess the color!</h2>
+      <ul class="info">
+        <li id="scoreDisplay">Current Score: <span id="scoreCurrent">0</span></li>
+        <li id="ansCheck">Answer Checker: <span id="checkerDisplay">Take a Guess!</span></li>
+      </ul>
+      <ul class="gameButtonbar">
+        <li class="navleft" id="newgame">New Game</li>
+        <li class="navright" id="hardmode">Hard</li>
+        <li class="navright" id="easymode">Easy</li>
+        <li class="navright" id="howTo">How to Play</li>
+      </ul>
+    </div>
+    <div class="instruct" id="insDisplay">
+      <h2>Game Instructions: </h2>
+      <ul>
+        <li>The top of the page will display an RGB Color Value, as the player you must select the square that matches that value.</li>
+        <li><span style="color:#00ff00">Easy Mode:</span> You will have to select the appropriate square of the 3 squares displayed. A Correct answer gives you 5 points and an incorrect answer deducts 3 points from your score. Your score is unable to fall below 0.</li>
+        <li><span style="color:#ff3300">Hard Mode:</span> You will have to select the appropriate square of the 6 squares displayed. A Correct answer gives you 10 points and an incorrect answer deducts 5 points from your score. Your score is unable to fall below 0.</li>
+        <li>Click "How to Play" again to hide!</li>
+      </ul> 
+    </div>
+    
+    <div class="container" id="squareContain">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+  <script type="text/javascript" src="gameScript.js"></script>	
+  </body>
+</html>
